@@ -5,8 +5,13 @@ Colour 1: #ff8a00 (Orange) - Primary Colour.
 Colour 2: #352392 (Navy Blue) - Secondary Colour.
 Colour 3: #f0ffff (Azure) - Background Colour.
 Colour 4: #a2aaad (Grey) - Border Colour.
+Colour 5: rgba(0,0,0,.2) - Search Box Shadow.
 Font: https://fonts.google.com/specimen/Text+Me+One
 */
+
+* {
+	background-color: #F0FFFF;
+}
 
 .wrapper, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten p {
 	font-family: 'Text Me One', sans-serif;
@@ -42,8 +47,8 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 	display: block;
 	margin : 0 auto;
 	margin-top: 50px;
-	max-width: 100%;
-	max-height: 100%;	
+	max-width: 75%;
+	max-height: 75%;	
 }
 .four {
 	grid-column: 0 / 0;
@@ -68,6 +73,7 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 	display: block;
 	margin : 0 auto;
 	min-width: 50%;
+	box-shadow:0 2px 10px rgba(0,0,0,.2)
 }
 .six {
 	grid-column: 1 / 7;
