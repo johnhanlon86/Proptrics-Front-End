@@ -26,7 +26,7 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 
 .wrapper p, .one p, .two p, .three p, .four p, .five p, .six p, .seven p, .eight p, .nine p {
 	font-family: 'Text Me One', sans-serif;
-	font-size: 3.5vmin;
+	font-size: 3vmin;
 	font-weight: 600;
 	color: #352392;
 }
@@ -42,8 +42,8 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 	grid-row: 1;
 }
 .navLogoImage {
-	max-width: 75%;
-	max-height: 75%;
+	max-width: 50%;
+	max-height: 50%;
 }
 .two { 
 	grid-column: 0 / 0;
@@ -58,9 +58,9 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 .searchBoxLogoImage {
 	display: block;
 	margin : 0 auto;
-	margin-top: 0px;
-	max-width: 75%;
-	max-height: 75%;	
+	margin-top: 10vh;
+	max-width: 50%;
+	max-height: 50%;	
 }
 .four {
 	grid-column: 0 / 0;
@@ -97,9 +97,9 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 
 .six h1 {
 	font-family: Text Me One, sans-serif;
-	font-size: 3.5vmin;
-	font-size: 24px;
+	font-size: 3vmin;
 	font-weight: 600;
+	margin-top: 10vh;
 	color: #ff8a00;
 }
 
