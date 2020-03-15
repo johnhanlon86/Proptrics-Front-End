@@ -11,12 +11,22 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 
 * {
 	background-color: #F0FFFF;
+	box-sizing: border-box;
+	/* padding: 0; */
+	margin: 0; */
 }
 
-.wrapper, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten p {
+.wrapper {
+	width: 98vw;
+	height: 90vh;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper p, .one p, .two p, .three p, .four p, .five p, .six p, .seven p, .eight p, .nine p {
 	font-family: 'Text Me One', sans-serif;
-	font-size: 130%;
-	font-size: 2vw;
+	font-size: 3.5vmin;
 	font-weight: 600;
 	color: #352392;
 }
@@ -24,7 +34,8 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 	display: grid;
 	background-color: #F0FFFF;
 	grid-template-columns: repeat(6, 1fr);
-	grid-auto-rows: minmax(100px, auto);
+	grid-template-rows: repeat(6, 1fr);
+	/* grid-auto-rows: minmax(auto, auto); /* Originally minmax(100px, auto); */
 }
 .one {
 	grid-column: 1 / 7;
@@ -73,40 +84,53 @@ Font: https://fonts.google.com/specimen/Text+Me+One
     border: 1px solid #a2aaad;
 	display: block;
 	margin : 0 auto;
-	min-width: 50%;
+	min-width: 75%;
 	box-shadow:0 2px 10px rgba(0,0,0,.2)
 }
 .six {
 	grid-column: 1 / 7;
 	grid-row: 5;
-	margin-top: 50px;
 	text-align: center;
 	color: #ff8a00;
+	margin-top: 1%;
 }
+
+.six h1 {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 3.5vmin;
+	font-size: 24px;
+	font-weight: 600;
+	color: #352392;
+}
+
 .seven {
 	grid-column: 1 / 3;
 	grid-row: 6;
-	margin-left: 28%;
+	margin-left: 15%;
+	margin-right: 15%;
 	font-weight: 100;
 	overflow-wrap: break-word;
 }
 .eight {
 	grid-column: 3 / 5;
 	grid-row: 6;
-	margin-left: 28%;
+	margin-left: 15%;
+	margin-right: 15%;
 	font-weight: 100;
 	overflow-wrap: break-word;
 }
 .nine {
 	grid-column: 5 / 7;
 	grid-row: 6;
-	margin-left: 28%;
-	font-weight: 100;
 	overflow-wrap: break-word;
 }
-.ten {
-	grid-column: 0;
-	grid-row: 0;
+
+.seven p, .eight p, .nine p {
+	margin-top: 3%;
+	margin-bottom: 3%;
+	margin-left: 15%;
+	margin-right: 15%;
+	font-weight: 100;
 }
 
 /* CSS Reset (Stops h1 automatic margins expanding outside divs)
