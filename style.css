@@ -46,7 +46,7 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 .searchBoxLogoImage {
 	display: block;
 	margin : 0 auto;
-	margin-top: 50px;
+	margin-top: 0px;
 	max-width: 75%;
 	max-height: 75%;	
 }
@@ -61,7 +61,7 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 	background-color: #F0FFFF;
 }
 .propertyAddressSearchBox {
-	margin-top: 25px !important;
+	margin-top: 0px !important;
 	margin-bottom: 25px;
     font-family: 'Text Me One', sans-serif;
 	font-size: 15px;
