@@ -75,7 +75,7 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 .propertyAddressSearchBox {
 	margin-top: 0px !important;
 	margin-bottom: 25px;
-    font-family: 'Text Me One', sans-serif;
+    font-family: Text Me One, sans-serif;
 	font-size: 15px;
 	font-weight: bold;
 	text-align: center;
@@ -96,7 +96,7 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 }
 
 .six h1 {
-	font-family: 'Text Me One', sans-serif;
+	font-family: Text Me One, sans-serif;
 	font-size: 3.5vmin;
 	font-size: 24px;
 	font-weight: 600;
@@ -106,17 +106,11 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 .seven {
 	grid-column: 1 / 3;
 	grid-row: 6;
-	margin-left: 15%;
-	margin-right: 15%;
-	font-weight: 100;
 	overflow-wrap: break-word;
 }
 .eight {
 	grid-column: 3 / 5;
 	grid-row: 6;
-	margin-left: 15%;
-	margin-right: 15%;
-	font-weight: 100;
 	overflow-wrap: break-word;
 }
 .nine {
@@ -124,13 +118,13 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 	grid-row: 6;
 	overflow-wrap: break-word;
 }
-
 .seven p, .eight p, .nine p {
 	margin-top: 3%;
 	margin-bottom: 3%;
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-left: 10%;
+	margin-right: 10%;
 	font-weight: 100;
+	text-align: center;
 }
 
 /* CSS Reset (Stops h1 automatic margins expanding outside divs)
