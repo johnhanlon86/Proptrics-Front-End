@@ -16,6 +16,7 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 .wrapper, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten p {
 	font-family: 'Text Me One', sans-serif;
 	font-size: 130%;
+	font-size: 2vw;
 	font-weight: 600;
 	color: #352392;
 }
