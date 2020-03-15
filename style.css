@@ -1,0 +1,219 @@
+/*
+Proptrics.com
+Branding Colour Palette:
+Colour 1: #ff8a00 (Orange) - Primary Colour.
+Colour 2: #352392 (Navy Blue) - Secondary Colour.
+Colour 3: #f0ffff (Azure) - Background Colour.
+Colour 4: #a2aaad (Grey) - Border Colour.
+Font: https://fonts.google.com/specimen/Text+Me+One
+*/
+
+.wrapper, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten p {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 130%;
+	font-weight: 600;
+	color: #352392;
+}
+.wrapper {
+	display: grid;
+	background-color: #F0FFFF;
+	grid-template-columns: repeat(6, 1fr);
+	grid-auto-rows: minmax(100px, auto);
+}
+.one {
+	grid-column: 1 / 7;
+	grid-row: 1;
+}
+.navLogoImage {
+	max-width: 75%;
+	max-height: 75%;
+}
+.two { 
+	grid-column: 0 / 0;
+	grid-row: 0 / 0;
+	background-color: #F0FFFF;
+}
+.three {
+	grid-column: 1 / 7;
+	grid-row: 2 / 4;
+	background-color: #F0FFFF;
+}
+.searchBoxLogoImage {
+	display: block;
+	margin : 0 auto;
+	margin-top: 50px;
+	max-width: 100%;
+	max-height: 100%;	
+}
+.four {
+	grid-column: 0 / 0;
+	grid-row: 0 / 0;
+	background-color: #F0FFFF;
+}
+.five {
+	grid-column: 1 / 7;
+	grid-row: 4;
+	background-color: #F0FFFF;
+}
+.propertyAddressSearchBox {
+	margin-top: 25px !important;
+	margin-bottom: 25px;
+    font-family: 'Text Me One', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+    padding: 11px 5px;
+    border-radius: 3px;
+    border: 1px solid #a2aaad;
+	display: block;
+	margin : 0 auto;
+	min-width: 50%;
+}
+.six {
+	grid-column: 1 / 7;
+	grid-row: 5;
+	margin-top: 50px;
+	text-align: center;
+	color: #ff8a00;
+}
+.seven {
+	grid-column: 1 / 3;
+	grid-row: 6;
+	margin-left: 28%;
+	font-weight: 100;
+}
+.eight {
+	grid-column: 3 / 5;
+	grid-row: 6;
+	margin-left: 28%;
+	font-weight: 100;
+}
+.nine {
+	grid-column: 5 / 7;
+	grid-row: 6;
+	margin-left: 28%;
+	font-weight: 100;
+}
+.ten {
+	grid-column: 0;
+	grid-row: 0;
+}
+
+/* CSS Reset (Stops h1 automatic margins expanding outside divs)
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+div {
+	height: 100px;
+}
+
+p {
+	text-align: center;
+	font-family: 'Text Me One', sans-serif;
+	font-weight: 600;
+}
+
+.tabIcon {
+	border-radius: 10%;
+}
+
+.wrapper {
+	background-color: #F0FFFF;
+	margin: auto;
+	height: auto;
+}
+
+.nav {
+	background-color: white;
+	width: 93%;
+	margin: auto;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+
+.nav.navLogo {
+	background-color: white;
+	width: 25%;
+	float: left;
+	border-radius: 6px;
+}
+
+.navLogoImage {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 6px;
+}
+
+.nav.navMainMenu {
+	width: 25%;
+	border-radius: 6px;
+	float: right;
+	clear: both;
+}
+
+.hero {
+	background-color: #ff8a00;
+	margin: auto;
+	border-radius: 6px;
+		border-top-left-radius: 6px;
+		border-top-right-radius: 6px;
+		border-bottom-right-radius: 6px;
+		border-bottom-left-radius: 6px;
+	width: 93%;
+	height: 300px;
+	margin-bottom: 10px;
+}
+
+.heroMetricsDisplay {
+	background-color: #F0FFFF;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 2%;
+	margin-right: 2%;
+	width: 46%;
+	height: 250px;
+	border-radius: 6px;
+	float: left;
+}
+
+.heroArtDisplay {
+	background-color: #352392;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 2%;
+	margin-right: 2%;
+	width: 46%;
+	height: 250px;
+	border-radius: 6px;
+	float: right;
+}
+
+.heroArtDisplayLogo {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 6px;
+	display: block;
+	margin: auto;
+}
+
+.searchBarContainer {
+	background-color: #ff8a00;
+	width: 93%;
+	margin: auto;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+
+.footer {
+	background-color: #352392;
+	width: 93%;
+	margin: auto;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+
+*/
+
