@@ -1,0 +1,94 @@
+/*
+Proptrics.com
+Branding Colour Palette:
+Colour 1: #ff8a00 (Orange) - Primary Colour.
+Colour 2: #352392 (Navy Blue) - Secondary Colour.
+Colour 3: #f0ffff (Azure) - Background Colour.
+Colour 4: #a2aaad (Grey) - Border Colour.
+Colour 5: rgba(0,0,0,.2) - Search Box Shadow.
+Font: https://fonts.google.com/specimen/Text+Me+One
+*/
+
+* {
+	/* background-color: #F0FFFF;*/
+	box-sizing: border-box;
+	/* padding: 0; */
+	margin: 0; */
+}
+
+a {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 3vmin;
+	font-weight: 600;
+	color: #352392;
+	text-decoration: none;
+}
+
+p {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 3vmin;
+	font-weight: 600;
+	color: #352392;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.grid-container {
+	display: grid; /* Create grid. */
+	background-color: #F0FFFF;
+	grid-template-columns: repeat(36, 1fr);
+	grid-template-rows: repeat(36, 1fr);
+	/* grid-auto-rows: minmax(auto, auto); /* Originally minmax(100px, auto); */
+	/* width: 98vw; */
+	height: 97.5vh;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	z-index: -1;
+}
+
+nav {
+	grid-column: 2 / 36;
+	grid-row: 2 / 5;
+	z-index: 0;
+}
+
+header {
+	grid-column: 2 / 10;
+	grid-row: 2 / 5;
+	z-index: 1;
+}
+
+.headerLogoImage {
+	max-width: 75%;
+	max-height: 75%;
+}
+
+main {
+	grid-column: 2 / 36;
+	grid-row: 5 / 33;
+	z-index: 0;
+}
+
+/*
+.nested-grid-container-1 {
+	display: grid; /* Create new nested grid.
+	grid-template-columns: repeat(36, 1fr);
+	grid-template-rows: repeat(36, 1fr);
+}
+*/
+
+.maps-section {
+	grid-column: 3 / 35;
+	grid-row: 6 / 32;
+	z-index: 1; 
+	/* Set the size of the div element that contains the map */
+	height: 100%;  /* The height is 100% */ 
+	width: 100%;  /* The width is the width of the web page */
+}
+
+footer {
+	grid-column: 2 / 36;
+	grid-row: 33 / 37;
+	z-index: 0;
+}
