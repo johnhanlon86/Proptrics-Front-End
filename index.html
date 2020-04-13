@@ -14,42 +14,61 @@
 		<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script defer src="script.js"></script>
 	</head>
-	
 	<body>
-		<div class="wrapper">
-		<main>
-			<div class="one"><!-- //*<img src="ProptricsLogo.png" class="navLogoImage"><!-- //* --></div>
-			<div class="two"></div>
-			<div class="three"><img src="ProptricsLogo.png" class="searchBoxLogoImage"></div>
-			<div class="four">
-				<a href="owners.html"><--- Owners</a>
+		<aside id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="file:///C:/Users/johnh/Desktop/proptrics.com/1.%20Front%20End/20-03-14%20Proptrics/index.html">Search</a>
+			<a href="file:///C:/Users/johnh/Desktop/proptrics.com/1.%20Front%20End/20-03-14%20Proptrics/maps.html">Map Search</a>
+			<a href="file:///C:/Users/johnh/Desktop/proptrics.com/1.%20Front%20End/20-03-14%20Proptrics/owners.html">Owners</a>
+			<a href="file:///C:/Users/johnh/Desktop/proptrics.com/1.%20Front%20End/20-03-14%20Proptrics/users.html">Users</a>
+			<a href="file:///C:/Users/johnh/Desktop/proptrics.com/1.%20Front%20End/20-03-14%20Proptrics/about.html">About</a>
+			<a href="file:///C:/Users/johnh/Desktop/proptrics.com/1.%20Front%20End/20-03-14%20Proptrics/contact.html">Contact</a>
+		</aside>
+		<div id="wrapper">
+			<div class="grid-container">
+				<nav>
+					<!-- Nav Bar with Hamburger Menu -->
+					<!-- Use any element to open the sidenav -->
+					<p></p>
+				</nav>
+				<header>
+					<!-- Header section (only for Proptrics logo) that sits over part of the nav bar in the top right corner -->
+				</header>
+				<!-- <aside>  -->
+					<!-- Side Navigation Bar (activated by Hamburger Menu) that pushes entire container right (life DuckDuckGo sidebar but on the right side.) -->
+				<!-- </aside> -->
+				<menu>
+					<a href="javascript:void(0)" class="closebtn" onclick="openNav()">Menu</a>
+				</menu>
+				<!--<main>-->	
+					<div class="logo"><img src="ProptricsLogo.png" class="logo-image"></div>
+					<div class="property-search-bar-container"><input id="PropertyAddress" name="PropertyAddress" placeholder="Enter a Market or Property Address" maxlength="255" type="text" class="property-search-bar" style="width: 250px;"></div>
+					<!--<div class="metrics-container">
+						<!--<h1>Real Estate Metrics</h1>
+					<!--</div>-->
+					<div class="metrics-quantity">
+						<p>Market:			Ireland</p>
+						<p>Properties:		250,000</p>
+						<p>Units:			350,000</p>
+						<p>Leases:			308,000</p>
+					</div>
+					<div class="metrics-financial">
+						<p>Rent:			€987,000,000</p>
+						<p>ERV:				€725,000,000</p>
+						<p>Market Status:	Over-Rented</p>
+						<p>Occ. Costs:		€246,000,000</p>
+					</div>
+					<div class="metrics-risk">
+						<p>AR Yield:		6%</p>
+						<p>WAULT:			9.47 Years</p>
+						<p>Covenant Risk:	Medium-High</p>
+						<p>Market Risk:		High</p>
+					</div>
+				<!--</main>-->
+				<footer>
+					<p></p>
+				</footer>	
 			</div>
-			<div class="five"><input id="PropertyAddress" name="PropertyAddress" placeholder="Enter a Market or Property Address" maxlength="255" type="text" class="propertyAddressSearchBox" style="width: 250px;"></div>
-			<div class="navButtonRight">
-				<a href="users.html">Users ---></a>
-			</div>
-			<div class="six">
-				<h1>Real Estate Metrics</h1>
-			</div>
-			<div class="seven">
-				<p>Market:			Ireland	</p>
-				<p>Properties:		250,000	</p>
-				<p>Units:			350,000	</p>
-				<p>Leases:			308,000	</p>
-			</div>
-			<div class="eight">
-				<p>Rent:			€987,000,000</p>
-				<p>ERV:				€725,000,000</p>
-				<p>WAULT:			9.47 Years	</p>
-				<p>Occ. Costs:		€246,000,000</p>
-			</div>
-			<div class="nine">
-				<p>Owners:			126,000		</p>
-				<p>Occupiers:		310,000		</p>
-				<p>Covenant Risk:	Medium-High	</p>
-				<p>Market Risk:		High	</p>
-			</div>
-		</main>
 		</div>
 		
 		<!-- //* <div class="wrapper">

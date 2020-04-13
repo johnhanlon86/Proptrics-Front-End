@@ -5,6 +5,19 @@ $(document).ready(function() {
   $("body").fadeIn(2000);
 });
 
+// Side Navigation Bar (push to right).
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("wrapper").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("wrapper").style.marginLeft = "0";
+}
+
 // Google Maps API.
 function myMap() {
   var mapProp= {
