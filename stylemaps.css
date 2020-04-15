@@ -109,25 +109,27 @@ p {
 }
 
 nav {
-	grid-column: 10 / 28;
+	grid-column: 14 / 24;
 	grid-row: 2 / 5;
 	z-index: 0;
-	margin-top: 15px;
+	margin-top: 45px;
 	text-align: center;
 }
 
 header {
-	grid-column: 2 / 10;
+	grid-column: 2 / 14;
 	grid-row: 2 / 5;
 	z-index: 1;
+	margin-left: 10px;
 	margin-top: 5px;
 }
 
 .menu {
-	grid-column: 28 / 36;
+	grid-column: 24 / 36;
 	grid-row: 2 / 5;
 	z-index: 1;
 	margin-top: 5px;
+	margin-right: 10px;
 	text-align: right;
 }
 
@@ -164,7 +166,7 @@ main {
 	grid-column: 2 / 36;
 	grid-row: 5 / 33;
 	z-index: 0;
-	margin-top: 10px;
+	margin-top: 15px;
 	border-style: solid;
 	border-color: #a2aaad; 
 }
