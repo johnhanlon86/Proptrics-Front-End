@@ -296,26 +296,26 @@ footer {
 /* Move divs down for devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 600px) {
 	.icon-container-quantity {
-		grid-row: 28 / 30;
+		grid-row: 27 / 29;
 	}
 	
 	.icon-container-financial {
-		grid-row: 28 / 30;
+		grid-row: 27 / 29;
 	}
 	
 	.icon-container-risk {
-		grid-row: 28 / 30;
+		grid-row: 27 / 29;
 	}
 	
 	.metrics-quantity {
-		grid-row: 30 / 35;
+		grid-row: 29 / 34;
 	}
 	
 	.metrics-financial {
-		grid-row: 30 / 35;
+		grid-row: 29 / 34;
 	}
 	
 	.metrics-risk {
-		grid-row: 30 / 35;
+		grid-row: 29 / 34;
 	}
 }
