@@ -297,31 +297,31 @@ footer {
 @media only screen and (max-width: 600px) {
 	.property-search-bar-container {
 		grid-column: 2 / 36;
-		grid-row: 10 / 15;
+		grid-row: 12 / 17;
 		z-index: 0;
 	}
 
 	.icon-container-quantity {
-		grid-row: 15 / 17;
+		grid-row: 17 / 19;
 	}
 	
 	.icon-container-financial {
-		grid-row: 15 / 17;
+		grid-row: 17 / 19;
 	}
 	
 	.icon-container-risk {
-		grid-row: 15 / 17;
+		grid-row: 17 / 19;
 	}
 	
 	.metrics-quantity {
-		grid-row: 17 / 22;
+		grid-row: 19 / 24;
 	}
 	
 	.metrics-financial {
-		grid-row: 17 / 22;
+		grid-row: 19 / 24;
 	}
 	
 	.metrics-risk {
-		grid-row: 17 / 22;
+		grid-row: 19 / 24;
 	}
 }
