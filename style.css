@@ -238,42 +238,42 @@ header {
 
 .icon-container-quantity {
 	grid-column: 2 / 13;
-	grid-row: 19 / 23;
+	grid-row: 18 / 22;
 	z-index: 0;
 	margin: auto;
 }
 
 .icon-container-financial {
 	grid-column: 13 / 25;
-	grid-row: 19 / 23;
+	grid-row: 18 / 22;
 	z-index: 0;
 	margin: auto;
 }
 
 .icon-container-risk {
 	grid-column: 25 / 36;
-	grid-row: 19 / 23;
+	grid-row: 18 / 22;
 	z-index: 0;
 	margin: auto;
 }
 
 .metrics-quantity {
 	grid-column: 2 / 13;
-	grid-row: 22 / 33;
+	grid-row: 21 / 32;
 	z-index: 0;
 	overflow-wrap: break-word;
 }
 
 .metrics-financial {
 	grid-column: 13 / 25;
-	grid-row: 22 / 33;
+	grid-row: 21 / 32;
 	z-index: 0;
 	overflow-wrap: break-word;
 }
 
 .metrics-risk {
 	grid-column: 25 / 36;
-	grid-row: 22 / 33;
+	grid-row: 21 / 32;
 	z-index: 0;
 	overflow-wrap: break-word;
 }
@@ -289,7 +289,7 @@ header {
 
 footer {
 	grid-column: 2 / 36;
-	grid-row: 33 / 37;
+	grid-row: 32 / 37;
 	z-index: 0;
 }
 
