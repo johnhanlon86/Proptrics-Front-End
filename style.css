@@ -293,29 +293,35 @@ footer {
 	z-index: 0;
 }
 
-/* Move divs down for devices (portrait tablets and large phones, 600px and below) */
+/* Move divs up for devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 600px) {
+	.property-search-bar-container {
+		grid-column: 2 / 36;
+		grid-row: 10 / 15;
+		z-index: 0;
+	}
+
 	.icon-container-quantity {
-		grid-row: 27 / 29;
+		grid-row: 15 / 17;
 	}
 	
 	.icon-container-financial {
-		grid-row: 27 / 29;
+		grid-row: 15 / 17;
 	}
 	
 	.icon-container-risk {
-		grid-row: 27 / 29;
+		grid-row: 15 / 17;
 	}
 	
 	.metrics-quantity {
-		grid-row: 29 / 34;
+		grid-row: 17 / 22;
 	}
 	
 	.metrics-financial {
-		grid-row: 29 / 34;
+		grid-row: 17 / 22;
 	}
 	
 	.metrics-risk {
-		grid-row: 29 / 34;
+		grid-row: 17 / 22;
 	}
 }
