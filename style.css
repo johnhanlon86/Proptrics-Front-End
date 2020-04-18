@@ -58,6 +58,7 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 .wrapper {
 	transition: margin-left .5s;
 	padding: 20px;
+	position: fixed;
 }
   
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
