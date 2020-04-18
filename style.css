@@ -205,18 +205,6 @@ header {
 }
 
 /* Rules for icon sizes: */
-/*
-.material-icons.md-18 {
-	font-size: 18px;
-	color: #ff8a00;
-}*/
-
-/*
-.material-icons.md-24 {
-	font-size: 24px;
-	color: #ff8a00;
-}*/
-
 .material-icons.md-36 {
 	font-size: 6vmin;
 	/* color: #ff8a00; */
