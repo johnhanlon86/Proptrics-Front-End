@@ -10,12 +10,22 @@ $(document).ready(function() {
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("wrapper").style.marginLeft = "250px";
+  document.getElementById("grid-container").style.marginLeft = "250px";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("wrapper").style.marginLeft = "0";
+}
+
+// Add custom function using custom JavaScript to toggle Open Nav Button.
+function toggleNav() {
+  if (document.getElementById("mySidenav").style.width == "250px" /*&& document.getElementById("wrapper").style.marginLeft == "250px" */ ) {
+    closeNav();
+  } else {
+    openNav();
+  }
 }
 
 // Google Maps API.
