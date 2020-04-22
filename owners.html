@@ -10,13 +10,14 @@
 		<meta name="msapplication-navbutton-color" content="#ff8a00">
 		<!-- iOS Safari -->
 		<meta name="apple-mobile-web-app-status-bar-style" content="#ff8a00">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="styleowners.css">
 		<link href="https://fonts.googleapis.com/css?family=Text+Me+One&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="icon" href="ProptricsLogoIcon.png" class ="tabIcon">
-		<title>Proptrics | Real Estate Metrics</title>
+		<title>Proptrics | Owners</title>
 		<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script defer src="script.js"></script>
+		<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRxTR_lwn5pvDWBe05dAnVY6d2ebkG8FI&callback=initMap"></script>
 	</head>
 	<body>
 		<aside id="mySidenav" class="sidenav">
@@ -33,57 +34,30 @@
 				<nav>
 					<!-- Nav Bar with Hamburger Menu -->
 					<!-- Use any element to open the sidenav -->
-					<p></p>
+					<p>Owner Metrics</p>
 				</nav>
 				<header>
 					<!-- Header section (only for Proptrics logo) that sits over part of the nav bar in the top right corner -->
 					<img src="ProptricsLogo.png" class="headerLogoImage">
-				</header>
-				<!-- <aside>  -->
-					<!-- Side Navigation Bar (activated by Hamburger Menu) that pushes entire container right (life DuckDuckGo sidebar but on the right side.) -->
-				<!-- </aside> -->
+				</header>		
 				<div class="menu">
 					<a href="javascript:void(0)" class="closebtn" onclick="toggleNav()"><i class="material-icons md-36">menu</i></a>
 				</div>
-				<!--<main>-->	
-					<!--<div class="logo"><img src="ProptricsLogo.png" class="logo-image"></div>-->
-					<div class="hero">
-					</div>	
-					<div class="property-search-bar-container"><input id="PropertyAddress" name="PropertyAddress" placeholder="Enter a Market or Property Address" maxlength="255" type="text" class="property-search-bar" style="width: 250px;"></div>
-					<!--<div class="metrics-container">
-						<!--<h1>Real Estate Metrics</h1>
-					<!--</div>-->
-					<div class="icon-container-quantity">
-						<i class="material-icons md-36">location_city</i>
-					</div>
-					<div class="icon-container-financial">
-						<i class="material-icons md-36">euro_symbol</i>
-					</div>	
-					<div class="icon-container-risk">
-						<i class="material-icons md-36">trending_up</i>
-					</div>		
-					<div class="metrics-quantity">
-						<p>Market:			Ireland</p>
-						<p>Properties:		250,000</p>
-						<p>Units:			350,000</p>
-						<p>Leases:			308,000</p>
-					</div>
-					<div class="metrics-financial">
-						<p>Rent:			€987,000,000</p>
-						<p>ERV:				€725,000,000</p>
-						<p>Market Status:	Over-Rented</p>
-					</div>
-					<div class="metrics-risk">
-						<p>AR Yield:		6%</p>
-						<p>WAULT:			9.47 Years</p>
-						<p>Covenant Risk:	Medium-High</p>
-						<p>Market Risk:		High</p>
-					</div>
-				<!--</main>-->
+				<div class="hero">
+				</div>				
+				<section id="left-section" class="left-section">
+				
+				</section>
+				<section id="middle-section" class="middle-section">
+				
+				</section>
+				<section id="right-section" class="right-section">
+				
+				</section>
 				<footer>
 					<p></p>
 				</footer>	
-			</div>
+			</div>	
 		</div>
 	</body>
 </html>

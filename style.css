@@ -44,12 +44,13 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 	font-size: 25px;
 	color: #ff8a00; /* Orange */
 	display: block;
+	white-space: nowrap;
 	transition: 0.3s;
 }
   
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-	color: #f1f1f1;
+	color: #f0ffff;
  }
   
 /* Position and style the close button (top right corner) */
@@ -63,9 +64,7 @@ Font: https://fonts.google.com/specimen/Text+Me+One
   
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 .wrapper {
-	transition: margin-left .5s;
-	padding: 20px;
-	position: fixed;
+	transition: 0.5s;	
 }
   
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -120,8 +119,10 @@ nav {
 	grid-column: 14 / 24;
 	grid-row: 2 / 5;
 	z-index: 0;
-	margin-top: 45px;
-	text-align: right;
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
 }
 
 header {
@@ -146,6 +147,30 @@ header {
 	text-align: right;
 }
 
+/* Rules for icon sizes: */
+.material-icons.md-36 {
+	font-size: 6vmin;
+	color: #f0ffff;
+}
+
+.menu .material-icons.md-36 {
+	font-size: 6vmin;
+	color: #ff8a00;
+}
+
+/* Make icons larger for devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+	.material-icons.md-36 {
+		font-size: 10vmin;
+		color: #f0ffff;
+	}
+	
+	.menu .material-icons.md-36 {
+		font-size: 10vmin;
+		color: #ff8a00;
+	}
+}
+
 .hero {
 	grid-column: 1 / 37;
 	grid-row: 5 / 37;
@@ -155,6 +180,7 @@ header {
 	background-size: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
+	opacity: .6;
 	border-top-style: solid;
 	border-top-color: #ff8a00;
 }
@@ -175,15 +201,6 @@ header {
 		/* Bring Nav bar up for devices (portrait tablets and large phones, 600px and below) */
 	}
 }
-
-/*
-.logo-image {
-	display: block;
-	margin : 0 auto;
-	max-width: 75%;
-	max-height: 75%;
-}
-*/
 
 .property-search-bar-container {
 	grid-column: 2 / 36;
@@ -213,38 +230,6 @@ header {
 		min-width: 75%;
 	}
 }
-
-/* Rules for icon sizes: */
-.material-icons.md-36 {
-	font-size: 6vmin;
-	/* color: #ff8a00; */
-	color: #f0ffff;
-}
-
-.menu .material-icons.md-36 {
-	font-size: 6vmin;
-	color: #ff8a00;
-}
-
-/* Make icons larger for devices (portrait tablets and large phones, 600px and below) */
-@media only screen and (max-width: 600px) {
-	.material-icons.md-36 {
-		font-size: 10vmin;
-		/* color: #ff8a00; */
-		color: #f0ffff;
-	}
-	
-	.menu .material-icons.md-36 {
-		font-size: 10vmin;
-		color: #ff8a00;
-	}
-}
-
-/*
-.material-icons.md-48 {
-	font-size: 48px;
-	color: #ff8a00;
-}*/
 
 .icon-container-quantity {
 	grid-column: 2 / 13;
@@ -324,14 +309,14 @@ footer {
 	}
 	
 	.metrics-quantity {
-		grid-row: 19 / 24;
+		grid-row: 20 / 24;
 	}
 	
 	.metrics-financial {
-		grid-row: 19 / 24;
+		grid-row: 20 / 24;
 	}
 	
 	.metrics-risk {
-		grid-row: 19 / 24;
+		grid-row: 20 / 24;
 	}
 }

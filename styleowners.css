@@ -169,26 +169,47 @@ header {
 	}
 }
 
-main {
-	grid-column: 2 / 36;
+.hero {
+	grid-column: 1 / 37;
 	grid-row: 5 / 33;
-	z-index: 0;
-	margin-top: 15px;
-	border-style: solid;
-	border-color: #a2aaad; 
+	z-index: 0; 
 }
 
-.maps-section {
-	grid-column: 3 / 35;
+.left-section {
+	grid-column: 2 / 12;
 	grid-row: 6 / 32;
 	z-index: 1; 
-	/* Set the size of the div element that contains the map */
-	height: 100%;  /* The height is 100% */ 
-	width: 100%;  /* The width is the width of the web page */
+	background-color: #352392;
+	opacity: .25;
+	border-style: solid;
+	border-color: #ff8a00;
+	border-radius: 10px;
+}
+
+.middle-section {
+	grid-column: 14 / 24;
+	grid-row: 6 / 32;
+	z-index: 1; 
+	background-color: #352392;
+	opacity: .5;
+	border-style: solid;
+	border-color: #ff8a00;
+	border-radius: 10px;
+}
+
+.right-section {
+	grid-column: 26 / 36;
+	grid-row: 6 / 32;
+	z-index: 1; 
+	background-color: #352392;
+	opacity: .75;
+	border-style: solid;
+	border-color: #ff8a00;
+	border-radius: 10px;
 }
 
 footer {
-	grid-column: 2 / 36;
+	grid-column: 1 / 37;
 	grid-row: 33 / 37;
 	z-index: 0;
 }
