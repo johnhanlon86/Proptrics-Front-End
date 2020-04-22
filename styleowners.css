@@ -94,12 +94,32 @@ a {
 	margin: 0px;
 }
 
+h1 {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 3vmin;
+	font-weight: 600;
+	color: #f0ffff;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+
 p {
 	font-family: 'Text Me One', sans-serif;
 	font-size: 3vmin;
 	font-weight: 600;
 	color: #352392;
 	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+li {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 3vmin;
+	font-weight: 600;
+	color: #f0ffff;
+	text-align: left;
 	padding: 0px;
 	margin: 0px;
 }
@@ -171,45 +191,52 @@ header {
 
 .hero {
 	grid-column: 1 / 37;
-	grid-row: 5 / 33;
+	grid-row: 5 / 34;
 	z-index: 0; 
+	margin-top: 15px;
+	background-color: #352392;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: .8;
+	border-top-style: solid;
+	border-top-color: #ff8a00;
 }
 
 .left-section {
 	grid-column: 2 / 12;
-	grid-row: 6 / 32;
+	grid-row: 8 / 32;
 	z-index: 1; 
 	background-color: #352392;
-	opacity: .25;
-	border-style: solid;
-	border-color: #ff8a00;
+	opacity: 1;
 	border-radius: 10px;
+	background-image: url("Charlemont Square.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .middle-section {
 	grid-column: 14 / 24;
-	grid-row: 6 / 32;
+	grid-row: 8 / 32;
 	z-index: 1; 
 	background-color: #352392;
-	opacity: .5;
-	border-style: solid;
-	border-color: #ff8a00;
+	opacity: 1;
 	border-radius: 10px;
+	padding: 10px;
 }
 
 .right-section {
 	grid-column: 26 / 36;
-	grid-row: 6 / 32;
+	grid-row: 8 / 32;
 	z-index: 1; 
 	background-color: #352392;
-	opacity: .75;
-	border-style: solid;
-	border-color: #ff8a00;
+	opacity: 1;
 	border-radius: 10px;
 }
 
 footer {
 	grid-column: 1 / 37;
-	grid-row: 33 / 37;
+	grid-row: 34 / 37;
 	z-index: 0;
 }
