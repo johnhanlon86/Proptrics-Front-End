@@ -219,6 +219,15 @@ header {
 	z-index: 0;
 }
 
+/* Move tagline up for mobile devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+	.tagline {
+		grid-column: 2 / 36;
+		grid-row: 8 / 13;
+		z-index: 0;
+	}
+}
+
 .property-search-bar-container {
 	grid-column: 2 / 36;
 	grid-row: 17 / 22;
