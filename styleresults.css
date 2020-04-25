@@ -368,6 +368,6 @@ footer {
 	}
 
 	.right-section {
-		display: none;
+		z-index: -1;
 	}
 }
