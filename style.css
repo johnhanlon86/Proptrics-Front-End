@@ -12,7 +12,6 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 * {
 	/* background-color: #F0FFFF; */
 	box-sizing: border-box;
-	/* padding: 0px; */
 	margin: 0px;
 }
 
@@ -68,7 +67,7 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 }
   
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 600px) {
 	.sidenav {padding-top: 15px;}
 	.sidenav a {font-size: 18px;}
 }
@@ -96,7 +95,17 @@ h1 {
 	font-family: 'Text Me One', sans-serif;
 	font-size: 12vmin;
 	font-weight: 300;
-	color: #352392;
+	color: #f0ffff;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+h2 {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 3vmin;
+	font-weight: 300;
+	color: #ff8a00;
 	text-align: center;
 	padding: 0px;
 	margin: 0px;
@@ -127,9 +136,8 @@ p {
 
 nav {
 	grid-column: 14 / 24;
-	grid-row: 2 / 5;
+	grid-row: 3 / 5;
 	z-index: 0;
-	margin-top: 30px;
 	margin-left: 10px;
 	margin-right: 10px;
 	text-align: center;
@@ -171,7 +179,7 @@ header {
 /* Make icons larger for devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 600px) {
 	.material-icons.md-36 {
-		font-size: 6vmin;
+		font-size: 10vmin;
 		color: #f0ffff;
 	}
 	
@@ -183,7 +191,7 @@ header {
 
 .hero {
 	grid-column: 1 / 37;
-	grid-row: 5 / 37;
+	grid-row: 5 / 35;
 	z-index: 0;
 	margin-top: 15px;
 	background-image: url("daniele-levis-pelusi-fUOTndD4Tak-unsplash.jpg");
@@ -191,7 +199,7 @@ header {
 	background-size: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
-	opacity: .5;
+	opacity: .8;
 	border-top-style: solid;
 	border-top-color: #ff8a00;
 }
@@ -236,6 +244,7 @@ header {
 
 .property-search-bar {
     font-family: Text Me One, sans-serif;
+	font-size: 2vh;
 	font-weight: bold;
 	text-align: center;
     padding: 10px 5px;
@@ -279,7 +288,7 @@ button:hover {
 /* Move button containers for devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 1000px) {
 	.search-button {
-		grid-column: 31 / 32;
+		grid-column: 29 / 32;
 		grid-row: 17 / 18;
 		z-index: 0;
 	}
@@ -287,43 +296,52 @@ button:hover {
 
 .icon-container-quantity {
 	grid-column: 2 / 13;
-	grid-row: 23 / 28;
+	grid-row: 21 / 26;
 	z-index: 0;
 	margin: auto;
 }
 
 .icon-container-financial {
 	grid-column: 13 / 25;
-	grid-row: 23 / 28;
+	grid-row: 21 / 26;
 	z-index: 0;
 	margin: auto;
 }
 
 .icon-container-risk {
 	grid-column: 25 / 36;
-	grid-row: 23 / 28;
+	grid-row: 21 / 26;
 	z-index: 0;
 	margin: auto;
 }
 
 .metrics-quantity {
-	grid-column: 2 / 13;
-	grid-row: 26 / 32;
+	grid-column: 4 / 11;
+	grid-row: 25 / 32;
 	z-index: 0;
+	background-color: #352392;
+	opacity: .5;
+	border-radius: 15px;
 	overflow-wrap: break-word;
 }
 
 .metrics-financial {
-	grid-column: 13 / 25;
-	grid-row: 26 / 32;
+	grid-column: 15 / 23;
+	grid-row: 25 / 32;
 	z-index: 0;
+	background-color: #352392;
+	opacity: .5;
+	border-radius: 15px;
 	overflow-wrap: break-word;
 }
 
 .metrics-risk {
-	grid-column: 25 / 36;
-	grid-row: 26 / 32;
+	grid-column: 27 / 34;
+	grid-row: 25 / 32;
 	z-index: 0;
+	background-color: #352392;
+	opacity: .5;
+	border-radius: 15px;
 	overflow-wrap: break-word;
 }
 
@@ -334,6 +352,7 @@ button:hover {
 	margin-right: 10%;
 	text-align: center;
 	color: #f0ffff;
+	z-index: 1;
 }
 
 footer {
