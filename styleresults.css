@@ -1,0 +1,387 @@
+/*
+Proptrics.com
+Branding Colour Palette:
+Colour 1: #ff8a00 (Orange) - Primary Colour.
+Colour 2: #352392 (Navy Blue) - Secondary Colour.
+Colour 3: #f0ffff (Azure) - Background Colour.
+Colour 4: #a2aaad (Grey) - Border Colour.
+Colour 5: rgba(0,0,0,.2) - Search Box Shadow.
+Font: https://fonts.google.com/specimen/Text+Me+One
+*/
+
+* {
+	/* background-color: #F0FFFF; */
+	box-sizing: border-box;
+	/* padding: 0px; */
+	margin: 0px; */
+}
+
+/* Make page fit to device with no scrolling with or without the top browser bar (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+	html {
+		position: fixed;
+		/* height: 100%; */
+		/* position: fixed; */
+	}
+}
+
+/* The side navigation menu */
+.sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	background-color: #352392; /* Navy Blue*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+  
+/* The navigation menu links */
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #ff8a00; /* Orange */
+	display: block;
+	white-space: nowrap;
+	transition: 0.3s;
+}
+  
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+	color: #f0ffff;
+ }
+  
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+  
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+.wrapper {
+	transition: 0.5s;
+}
+  
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+
+/* To be done in JS file?
+/* Make menu narrower for narrower devices (portrait tablets and large phones, 600px and below)
+@media only screen and (max-width: 600px) {
+	.sidenav {
+		width: 125px;
+	}
+}
+*/
+
+a {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 3vmin;
+	font-weight: 600;
+	color: #352392;
+	text-decoration: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+h1 {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 3vmin;
+	font-weight: 600;
+	color: #f0ffff;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+h2 {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 3vmin;
+	font-weight: 600;
+	color: #f0ffff;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+p {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 3vmin;
+	font-weight: 600;
+	color: #352392;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+li {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 3vmin;
+	font-weight: 600;
+	color: #f0ffff;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+.grid-container {
+	display: grid; /* Create grid. */
+	background-color: #F0FFFF;
+	grid-template-columns: repeat(36, 1fr);
+	grid-template-rows: repeat(36, 1fr);
+	/* grid-auto-rows: minmax(auto, auto); /* Originally minmax(100px, auto); */
+	height: 100vh;
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	z-index: -1;
+}
+
+nav {
+	grid-column: 14 / 24;
+	grid-row: 2 / 5;
+	z-index: 0;
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+header {
+	grid-column: 2 / 14;
+	grid-row: 2 / 5;
+	z-index: 1;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.headerLogoImage {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.menu {
+	grid-column: 24 / 36;
+	grid-row: 2 / 5;
+	z-index: 1;
+	margin-top: 5px;
+	margin-right: 10px;
+	text-align: right;
+}
+
+/* Rules for icon sizes: */
+.material-icons.md-36 {
+	font-size: 6vmin;
+	color: #ff8a00;
+}
+
+/* Make icons larger for devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+	.material-icons.md-36 {
+		font-size: 10vmin;
+		/* color: #ff8a00; */
+		color: #f0ffff;
+	}
+	
+	.menu .material-icons.md-36 {
+		font-size: 10vmin;
+		color: #ff8a00;
+	}
+}
+
+.hero {
+	grid-column: 1 / 37;
+	grid-row: 5 / 34;
+	z-index: 0; 
+	margin-top: 15px;
+	background-color: #352392;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: .8;
+	border-top-style: solid;
+	border-top-color: #ff8a00;
+}
+
+.left-top-section {
+	grid-column: 2 / 24;
+	grid-row: 8 / 14;
+	z-index: 1; 
+	background-color: #352392;
+	opacity: 1;
+	border-radius: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.left-top-photo-section{
+	grid-column: 2 / 6;
+	grid-row: 8 / 14;
+	z-index: 2; 
+	opacity: 1;
+	border-radius: 10px 0px 0px 10px;
+	background-image: url("Charlemont Square.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.left-top-description-section{
+	grid-column: 7 / 24;
+	grid-row: 8 / 14;
+	z-index: 2; 
+	opacity: 1;
+	border-radius: 10px;
+	padding-top: 5%;
+}
+
+.left-middle-section {
+	grid-column: 2 / 24;
+	grid-row: 15 / 21;
+	z-index: 1; 
+	background-color: #352392;
+	opacity: 1;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.left-middle-photo-section{
+	grid-column: 2 / 6;
+	grid-row: 15 / 21;
+	z-index: 2; 
+	opacity: 1;
+	border-radius: 10px 0px 0px 10px;
+	background-image: url("Charlemont Square.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.left-middle-description-section{
+	grid-column: 7 / 24;
+	grid-row: 15 / 21;
+	z-index: 2; 
+	opacity: 1;
+	border-radius: 10px;
+	padding-top: 5%;
+}
+
+.left-bottom-section {
+	grid-column: 2 / 24;
+	grid-row: 22 / 28;
+	z-index: 1; 
+	background-color: #352392;
+	opacity: 1;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.left-bottom-photo-section{
+	grid-column: 2 / 6;
+	grid-row: 22 / 28;
+	z-index: 2; 
+	opacity: 1;
+	border-radius: 10px 0px 0px 10px;
+	background-image: url("Charlemont Square.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.left-bottom-description-section{
+	grid-column: 7 / 24;
+	grid-row: 22 / 28;
+	z-index: 2; 
+	opacity: 1;
+	border-radius: 10px;
+	padding-top: 5%;
+}
+
+.right-section {
+	grid-column: 26 / 36;
+	grid-row: 8 / 32;
+	z-index: 1; 
+	background-color: #352392;
+	opacity: 1;
+	border-radius: 10px;
+}
+
+.maps-section {
+	grid-column: 3 / 35;
+	grid-row: 6 / 32;
+	z-index: 1; 
+	/* Set the size of the div element that contains the map */
+	height: 100%;  /* The height is 100% */ 
+	width: 100%;  /* The width is the width of the web page */
+	border-radius: 10px;
+}
+
+footer {
+	grid-column: 1 / 37;
+	grid-row: 34 / 37;
+	z-index: 0;
+}
+
+/* Revise layout for mobile (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 1000px) {
+	.left-top-section {
+		grid-column: 2 / 35;
+		grid-row: 6 / 12;
+	}
+
+	.left-top-photo-section{
+		grid-column: 2 / 12;
+		grid-row: 6 / 12;
+	}
+
+	.left-top-description-section{
+		grid-column: 13 / 35;
+		grid-row: 6 / 12;
+	}
+
+	.left-middle-section {
+		grid-column: 2 / 35;
+		grid-row: 13 / 19;
+	}
+
+	.left-middle-photo-section{
+		grid-column: 2 / 12;
+		grid-row: 13 / 19;
+	}
+
+	.left-middle-description-section{
+		grid-column: 13 / 35;
+		grid-row: 13 / 19;
+	}
+
+	.left-bottom-section {
+		grid-column: 2 / 35;
+		grid-row: 20 / 26;
+	}
+
+	.left-bottom-photo-section{
+		grid-column: 2 / 12;
+		grid-row: 20 / 26;
+	}
+
+	.left-bottom-description-section{
+		grid-column: 13 / 35;
+		grid-row: 20 / 26;
+	}
+
+	.right-section {
+		grid-column: 2 / 35;
+		grid-row: 27 / 33;
+	}
+}

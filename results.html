@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Mobile Bar Colour -->
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#ff8a00">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#ff8a00">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#ff8a00">
+		<link rel="stylesheet" type="text/css" href="styleresults.css">
+		<link href="https://fonts.googleapis.com/css?family=Text+Me+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="icon" href="ProptricsLogoIcon.png" class ="tabIcon">
+		<title>Proptrics | Search Results</title>
+		<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script defer src="script.js"></script>
+		<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRxTR_lwn5pvDWBe05dAnVY6d2ebkG8FI&callback=initMap"></script>
+	</head>
+	<body>
+		<aside id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="https://johnhanlon86.github.io/Proptrics/index.html">Search</a>
+			<a href="https://johnhanlon86.github.io/Proptrics/maps.html">Map Search</a>
+			<a href="https://johnhanlon86.github.io/Proptrics/owners.html">Owners</a>
+			<a href="https://johnhanlon86.github.io/Proptrics/users.html">Users</a>
+			<a href="https://johnhanlon86.github.io/Proptrics/about.html">About</a>
+			<a href="https://johnhanlon86.github.io/Proptrics/contact.html">Contact</a>
+		</aside>
+		<div id="wrapper" class="wrapper">
+			<div class="grid-container">
+				<nav>
+					<!-- Nav Bar with Hamburger Menu -->
+					<!-- Use any element to open the sidenav -->
+					<p>Search Results</p>
+				</nav>
+				<header>
+					<!-- Header section (only for Proptrics logo) that sits over part of the nav bar in the top right corner -->
+					<a href="https://johnhanlon86.github.io/Proptrics/index.html"><img src="ProptricsLogo.png" class="headerLogoImage"></a>
+				</header>		
+				<div class="menu">
+					<a href="javascript:void(0)" class="closebtn" onclick="toggleNav()"><i class="material-icons md-36">menu</i></a>
+				</div>
+				<div class="hero">
+				</div>				
+				<section id="left-top-section" class="left-top-section">
+				</section>
+				<section id="left-top-photo-section" class="left-top-photo-section">
+				</section>
+				<section id="left-top-description-section" class="left-top-description-section">
+					<h2>1 Charlemont Square</h2>
+				</section>
+				
+				<section id="left-middle-section" class="left-middle-section">
+				</section>
+				<section id="left-middle-photo-section" class="left-middle-photo-section">
+				</section>
+				<section id="left-middle-description-section" class="left-middle-description-section">
+					<h2>The Reflector</h2>
+				</section>
+
+				<section id="left-bottom-section" class="left-bottom-section">
+				</section>
+				<section id="left-bottom-photo-section" class="left-bottom-photo-section">
+				</section>
+				<section id="left-bottom-description-section" class="left-bottom-description-section">
+					<h2>Web Development Central</h2>
+				</section>
+
+				<section id="right-section" class="right-section">
+					<section id="maps-section" class="maps-section">
+						<!-- This section contains google maps API display -->
+						<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.9863371239!2d-6.3857866795498905!3d53.32423806713231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1586706914495!5m2!1sen!2sie" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+						<script>
+							// Initialize and add the map
+							function initMap() {
+	  							// The location of location (Dublin).
+	  							var location = {lat: 53.350140, lng: -6.266155}; 
+	  							// The map, centered at Dublin
+								var map = new google.maps.Map(document.getElementById('maps-section'), {zoom: 10, center: location, 
+									styles: [
+									{elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+									{elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+									{elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+									{
+									featureType: 'administrative.locality',
+									elementType: 'labels.text.fill',
+									stylers: [{color: '#d59563'}]
+									},
+									{
+									featureType: 'poi',
+									elementType: 'labels.text.fill',
+									stylers: [{color: '#d59563'}]
+									},
+									{
+									featureType: 'poi.park',
+									elementType: 'geometry',
+									stylers: [{color: '#263c3f'}]
+									},
+									{
+									featureType: 'poi.park',
+									elementType: 'labels.text.fill',
+									stylers: [{color: '#6b9a76'}]
+									},
+									{
+									featureType: 'road',
+									elementType: 'geometry',
+									stylers: [{color: '#38414e'}]
+									},
+									{
+									featureType: 'road',
+									elementType: 'geometry.stroke',
+									stylers: [{color: '#212a37'}]
+									},
+									{
+									featureType: 'road',
+									elementType: 'labels.text.fill',
+									stylers: [{color: '#9ca5b3'}]
+									},
+									{
+									featureType: 'road.highway',
+									elementType: 'geometry',
+									stylers: [{color: '#746855'}]
+									},
+									{
+									featureType: 'road.highway',
+									elementType: 'geometry.stroke',
+									stylers: [{color: '#1f2835'}]
+									},
+									{
+									featureType: 'road.highway',
+									elementType: 'labels.text.fill',
+									stylers: [{color: '#f3d19c'}]
+									},
+									{
+									featureType: 'transit',
+									elementType: 'geometry',
+									stylers: [{color: '#2f3948'}]
+									},
+									{
+									featureType: 'transit.station',
+									elementType: 'labels.text.fill',
+									stylers: [{color: '#d59563'}]
+									},
+									{
+									featureType: 'water',
+									elementType: 'geometry',
+									stylers: [{color: '#17263c'}]
+									},
+									{
+									featureType: 'water',
+									elementType: 'labels.text.fill',
+									stylers: [{color: '#515c6d'}]
+									},
+									{
+									featureType: 'water',
+									elementType: 'labels.text.stroke',
+									stylers: [{color: '#17263c'}]
+									}
+								]});
+	  							// The marker, positioned at Dublin
+	  							var marker = new google.maps.Marker({position: location, map: map});
+							}
+						</script>
+					</section>
+				</section>
+				<footer>
+					<p></p>
+				</footer>	
+			</div>	
+		</div>
+	</body>
+</html>
