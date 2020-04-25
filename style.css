@@ -287,7 +287,7 @@ button:hover {
 /* Move button containers for devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 1000px) {
 	.search-button {
-		grid-column: 29 / 32;
+		grid-column: 29 / 31;
 		grid-row: 17 / 18;
 		z-index: 0;
 	}

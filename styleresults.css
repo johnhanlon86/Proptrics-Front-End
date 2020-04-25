@@ -203,6 +203,7 @@ header {
 	grid-column: 2 / 24;
 	grid-row: 6 / 7;
 	z-index: 1; 
+	margin-left: 5px;
 }
 
 .heading h2 {
