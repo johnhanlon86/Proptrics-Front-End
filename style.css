@@ -186,11 +186,12 @@ header {
 	grid-row: 5 / 37;
 	z-index: 0;
 	margin-top: 15px;
-	background-image: url("robert-alves-de-jesus-ZzClBJhLTmM-unsplash.jpg");
+	background-image: url("daniele-levis-pelusi-fUOTndD4Tak-unsplash.jpg");
+	/* background-image: url("robert-alves-de-jesus-ZzClBJhLTmM-unsplash.jpg"); */
 	background-size: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
-	opacity: .6;
+	opacity: .5;
 	border-top-style: solid;
 	border-top-color: #ff8a00;
 }
@@ -214,13 +215,13 @@ header {
 
 .tagline {
 	grid-column: 2 / 36;
-	grid-row: 8 / 13;
+	grid-row: 12 / 17;
 	z-index: 0;
 }
 
 .property-search-bar-container {
 	grid-column: 2 / 36;
-	grid-row: 13 / 18;
+	grid-row: 17 / 22;
 	z-index: 0;
 }
 
@@ -249,16 +250,33 @@ header {
 
 .search-button {
 	grid-column: 16 / 19;
-	grid-row: 17 / 18;
+	grid-row: 20 / 22;
 	z-index: 0;
 	margin: auto;
 }
 
 .map-view-button {
 	grid-column: 19 / 22;
-	grid-row: 17 / 18;
+	grid-row: 20 / 22;
 	z-index: 0;
 	margin: auto;
+}
+
+/* Move button containers for devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+	.search-button {
+		grid-column: 12 / 14;
+		grid-row: 17 / 18;
+		z-index: 0;
+		margin: auto;
+	}
+	
+	.map-view-button {
+		grid-column: 20 / 22;
+		grid-row: 17 / 18;
+		z-index: 0;
+		margin: auto;
+	}
 }
 
 .search-button button, .map-view-button button {
@@ -281,42 +299,42 @@ button:hover {
 
 .icon-container-quantity {
 	grid-column: 2 / 13;
-	grid-row: 20 / 24;
+	grid-row: 23 / 28;
 	z-index: 0;
 	margin: auto;
 }
 
 .icon-container-financial {
 	grid-column: 13 / 25;
-	grid-row: 20 / 24;
+	grid-row: 23 / 28;
 	z-index: 0;
 	margin: auto;
 }
 
 .icon-container-risk {
 	grid-column: 25 / 36;
-	grid-row: 20 / 24;
+	grid-row: 23 / 28;
 	z-index: 0;
 	margin: auto;
 }
 
 .metrics-quantity {
 	grid-column: 2 / 13;
-	grid-row: 23 / 32;
+	grid-row: 26 / 32;
 	z-index: 0;
 	overflow-wrap: break-word;
 }
 
 .metrics-financial {
 	grid-column: 13 / 25;
-	grid-row: 23 / 32;
+	grid-row: 26 / 32;
 	z-index: 0;
 	overflow-wrap: break-word;
 }
 
 .metrics-risk {
 	grid-column: 25 / 36;
-	grid-row: 23 / 32;
+	grid-row: 26 / 32;
 	z-index: 0;
 	overflow-wrap: break-word;
 }
