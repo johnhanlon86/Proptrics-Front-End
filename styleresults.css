@@ -199,6 +199,16 @@ header {
 	border-top-color: #ff8a00;
 }
 
+.heading {
+	grid-column: 2 / 24;
+	grid-row: 6 / 7;
+	z-index: 1; 
+}
+
+.heading h2 {
+	color: #ff8a00;
+}
+
 .left-top-section {
 	grid-column: 2 / 24;
 	grid-row: 8 / 14;
@@ -323,51 +333,41 @@ footer {
 @media only screen and (max-width: 1000px) {
 	.left-top-section {
 		grid-column: 2 / 36;
-		grid-row: 6 / 12;
 	}
 
 	.left-top-photo-section{
 		grid-column: 2 / 12;
-		grid-row: 6 / 12;
 	}
 
 	.left-top-description-section{
 		grid-column: 13 / 36;
-		grid-row: 6 / 12;
 	}
 
 	.left-middle-section {
 		grid-column: 2 / 36;
-		grid-row: 13 / 19;
 	}
 
 	.left-middle-photo-section{
 		grid-column: 2 / 12;
-		grid-row: 13 / 19;
 	}
 
 	.left-middle-description-section{
 		grid-column: 13 / 36;
-		grid-row: 13 / 19;
 	}
 
 	.left-bottom-section {
 		grid-column: 2 / 36;
-		grid-row: 20 / 26;
 	}
 
 	.left-bottom-photo-section{
 		grid-column: 2 / 12;
-		grid-row: 20 / 26;
 	}
 
 	.left-bottom-description-section{
 		grid-column: 13 / 36;
-		grid-row: 20 / 26;
 	}
 
 	.right-section {
-		grid-column: 2 / 36;
-		grid-row: 27 / 34;
+		display: none;
 	}
 }
