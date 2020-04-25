@@ -92,10 +92,20 @@ a {
 	margin: 0px;
 }
 
+h1 {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 10vmin;
+	font-weight: 300;
+	color: #352392;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
 p {
 	font-family: 'Text Me One', sans-serif;
 	font-size: 3vmin;
-	font-weight: 600;
+	font-weight: 300;
 	color: #f0ffff;
 	text-align: center;
 	padding: 0px;
@@ -202,6 +212,12 @@ header {
 	}
 }
 
+.tagline {
+	grid-column: 2 / 36;
+	grid-row: 8 / 13;
+	z-index: 0;
+}
+
 .property-search-bar-container {
 	grid-column: 2 / 36;
 	grid-row: 13 / 18;
@@ -231,44 +247,76 @@ header {
 	}
 }
 
+.search-button {
+	grid-column: 16 / 19;
+	grid-row: 17 / 18;
+	z-index: 0;
+	margin: auto;
+}
+
+.map-view-button {
+	grid-column: 19 / 22;
+	grid-row: 17 / 18;
+	z-index: 0;
+	margin: auto;
+}
+
+.search-button button, .map-view-button button {
+	background-color: #ff8a00;
+	border-style: none;
+	border-radius: 5px;
+	padding: 7px 15px;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+}
+
+button {
+	transition-duration: 0.4s;
+}
+  
+button:hover {
+	background-color: #352392;
+}
+
 .icon-container-quantity {
 	grid-column: 2 / 13;
-	grid-row: 18 / 22;
+	grid-row: 20 / 24;
 	z-index: 0;
 	margin: auto;
 }
 
 .icon-container-financial {
 	grid-column: 13 / 25;
-	grid-row: 18 / 22;
+	grid-row: 20 / 24;
 	z-index: 0;
 	margin: auto;
 }
 
 .icon-container-risk {
 	grid-column: 25 / 36;
-	grid-row: 18 / 22;
+	grid-row: 20 / 24;
 	z-index: 0;
 	margin: auto;
 }
 
 .metrics-quantity {
 	grid-column: 2 / 13;
-	grid-row: 21 / 32;
+	grid-row: 23 / 32;
 	z-index: 0;
 	overflow-wrap: break-word;
 }
 
 .metrics-financial {
 	grid-column: 13 / 25;
-	grid-row: 21 / 32;
+	grid-row: 23 / 32;
 	z-index: 0;
 	overflow-wrap: break-word;
 }
 
 .metrics-risk {
 	grid-column: 25 / 36;
-	grid-row: 21 / 32;
+	grid-row: 23 / 32;
 	z-index: 0;
 	overflow-wrap: break-word;
 }
@@ -295,7 +343,7 @@ footer {
 		grid-row: 12 / 17;
 		z-index: 0;
 	}
-
+	/*
 	.icon-container-quantity {
 		grid-row: 17 / 19;
 	}
@@ -319,4 +367,5 @@ footer {
 	.metrics-risk {
 		grid-row: 20 / 24;
 	}
+	*/
 }
