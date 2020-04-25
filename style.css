@@ -94,7 +94,7 @@ a {
 
 h1 {
 	font-family: 'Text Me One', sans-serif;
-	font-size: 10vmin;
+	font-size: 12vmin;
 	font-weight: 300;
 	color: #352392;
 	text-align: center;
@@ -171,7 +171,7 @@ header {
 /* Make icons larger for devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 600px) {
 	.material-icons.md-36 {
-		font-size: 10vmin;
+		font-size: 6vmin;
 		color: #f0ffff;
 	}
 	
@@ -215,87 +215,57 @@ header {
 
 .tagline {
 	grid-column: 2 / 36;
-	grid-row: 12 / 17;
+	grid-row: 10 / 16;
 	z-index: 0;
-}
-
-/* Move tagline up for mobile devices (portrait tablets and large phones, 600px and below) */
-@media only screen and (max-width: 600px) {
-	.tagline {
-		grid-column: 2 / 36;
-		grid-row: 8 / 13;
-		z-index: 0;
-	}
 }
 
 .property-search-bar-container {
-	grid-column: 2 / 36;
-	grid-row: 17 / 22;
+	grid-column: 13 / 25;
+	grid-row: 17 / 18;
 	z-index: 0;
+}
+
+/* Widen Search Bar for narrower devices. */
+@media only screen and (max-width: 1000px) {
+	.property-search-bar-container {
+		grid-column: 6 / 32;
+		grid-row: 17 / 18;
+		z-index: 0;
+	}
 }
 
 .property-search-bar {
-	margin-top: 0px !important;
-	margin-bottom: 25px;
     font-family: Text Me One, sans-serif;
-	font-size: 15px;
 	font-weight: bold;
 	text-align: center;
-    padding: 11px 5px;
-    border-radius: 15px;
-    border: 1px solid #a2aaad;
+    padding: 10px 5px;
+    border-radius: 15px 15px 15px 15px;
+    border: 0px;
 	display: block;
 	margin : 0 auto;
-	min-width: 35%;
+	min-width: 100%;
+	min-height: 100%;
 	box-shadow:0 2px 10px rgba(0,0,0,.2)
 }
 
-/* Make search bar wider for narrower devices (portrait tablets and large phones, 600px and below) */
-@media only screen and (max-width: 600px) {
-	.property-search-bar {
-		min-width: 75%;
-	}
-}
-
 .search-button {
-	grid-column: 16 / 19;
-	grid-row: 20 / 22;
+	grid-column: 24 / 25;
+	grid-row: 17 / 18;
 	z-index: 0;
-	margin: auto;
 }
 
-.map-view-button {
-	grid-column: 19 / 22;
-	grid-row: 20 / 22;
-	z-index: 0;
-	margin: auto;
-}
-
-/* Move button containers for devices (portrait tablets and large phones, 600px and below) */
-@media only screen and (max-width: 600px) {
-	.search-button {
-		grid-column: 12 / 14;
-		grid-row: 17 / 18;
-		z-index: 0;
-		margin: auto;
-	}
-	
-	.map-view-button {
-		grid-column: 20 / 22;
-		grid-row: 17 / 18;
-		z-index: 0;
-		margin: auto;
-	}
-}
-
-.search-button button, .map-view-button button {
+.search-button button {
 	background-color: #ff8a00;
+	border-radius: 0px 15px 15px 0px;
 	border-style: none;
-	border-radius: 5px;
-	padding: 7px 15px;
 	text-align: center;
 	display: inline-block;
 	cursor: pointer;
+}
+
+.search-button .material-icons.md-36 {
+	font-size: 8vmin;
+	color: #f0ffff;
 }
 
 button {
@@ -304,6 +274,15 @@ button {
   
 button:hover {
 	background-color: #352392;
+}
+
+/* Move button containers for devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 1000px) {
+	.search-button {
+		grid-column: 31 / 32;
+		grid-row: 17 / 18;
+		z-index: 0;
+	}
 }
 
 .icon-container-quantity {
@@ -364,12 +343,7 @@ footer {
 }
 
 /* Move divs up for devices (portrait tablets and large phones, 600px and below) */
-@media only screen and (max-width: 600px) {
-	.property-search-bar-container {
-		grid-column: 2 / 36;
-		grid-row: 12 / 17;
-		z-index: 0;
-	}
+
 	/*
 	.icon-container-quantity {
 		grid-row: 17 / 19;
