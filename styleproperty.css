@@ -133,7 +133,6 @@ p {
 	}
 }
 
-
 li {
 	font-family: 'Text Me One', sans-serif;
 	font-size: 3vmin;
@@ -234,6 +233,8 @@ header {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	border-style: solid;
+	border-color: #ff8a00;
 }
 
 .left-top-photo-section{
@@ -246,14 +247,9 @@ header {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-/* Create overlay so that section is clickable. */
-.left-top-section-overlay {
-	grid-column: 2 / 24;
-	grid-row: 8 / 14;
-	z-index: 4;
-	background-color: transparent; 
+	border-style: solid;
+	border-color: #ff8a00;
+	border-width: 3px 0px 3px 3px;
 }
 
 .left-top-description-section{
@@ -280,7 +276,8 @@ header {
 	z-index: 2; 
 	opacity: 1;
 	border-radius: 10px 0px 0px 10px;
-	background-image: url("abbeystreet.jpg");
+	background-color: white;
+	background-image: url("amazon.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -310,7 +307,8 @@ header {
 	z-index: 2; 
 	opacity: 1;
 	border-radius: 10px 0px 0px 10px;
-	background-image: url("googlehq.jpg");
+	background-color: white;
+	background-image: url("insomnia.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
