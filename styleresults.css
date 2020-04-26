@@ -379,6 +379,10 @@ footer p {
 		grid-column: 2 / 36;
 	}
 
+	.left-top-section-overlay {
+		grid-column: 2 / 36;
+	}
+
 	.left-top-photo-section{
 		grid-column: 2 / 12;
 	}
