@@ -233,6 +233,31 @@ header {
 	z-index: 0;
 }
 
+.sub-tagline {
+	grid-column: 2 / 36;
+	grid-row: 15 / 16;
+	z-index: 0;
+}
+
+.sub-tagline h2 {
+	color: #ff8a00;
+	font-weight: 600;
+}
+
+/* Reposition and make subheading larger for smaller devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+	.sub-tagline {
+		grid-row: 13 / 14;
+		z-index: 0;
+	}
+	
+	.sub-tagline h2 {
+		color: #ff8a00;
+		font-weight: 600;
+		font-size: 3vh;
+	}
+}
+
 .property-search-bar-container {
 	grid-column: 13 / 25;
 	grid-row: 17 / 18;
