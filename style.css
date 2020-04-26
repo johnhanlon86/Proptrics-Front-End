@@ -309,7 +309,7 @@ button:hover {
 }
 
 .icon-container-financial {
-	grid-column: 13 / 25;
+	grid-column: 14 / 24;
 	grid-row: 21 / 26;
 	z-index: 0;
 	margin: auto;
