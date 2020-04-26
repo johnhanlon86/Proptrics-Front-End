@@ -95,7 +95,7 @@ h1 {
 	font-family: 'Text Me One', sans-serif;
 	font-size: 12vmin;
 	font-weight: 300;
-	color: #f0ffff;
+	color: #ff8a00;
 	text-align: center;
 	padding: 0px;
 	margin: 0px;
@@ -240,8 +240,8 @@ header {
 }
 
 .sub-tagline h2 {
-	color: #ff8a00;
-	font-weight: 600;
+	color: #f0ffff;
+	font-weight: 300;
 }
 
 /* Reposition and make subheading larger for smaller devices (portrait tablets and large phones, 600px and below) */
@@ -252,8 +252,7 @@ header {
 	}
 	
 	.sub-tagline h2 {
-		color: #ff8a00;
-		font-weight: 600;
+		font-weight: 300;
 		font-size: 3vh;
 	}
 }
