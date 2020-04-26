@@ -133,17 +133,6 @@ p {
 	}
 }
 
-
-li {
-	font-family: 'Text Me One', sans-serif;
-	font-size: 3vmin;
-	font-weight: 300;
-	color: #f0ffff;
-	text-align: left;
-	padding: 0px;
-	margin: 0px;
-}
-
 .grid-container {
 	display: grid; /* Create grid. */
 	background-color: #F0FFFF;
@@ -151,6 +140,7 @@ li {
 	grid-template-rows: repeat(36, 1fr);
 	/* grid-auto-rows: minmax(auto, auto); /* Originally minmax(100px, auto); */
 	height: 100vh;
+	width: 100vw;
 	box-sizing: border-box;
 	padding: 0px;
 	margin: 0px;
@@ -367,14 +357,14 @@ footer p {
 }
 
 /* Move button containers for devices (portrait tablets and large phones, 600px and below) */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
 	footer p {
 		font-size: 3vmin;
 	}
 }
 
 /* Revise layout for mobile (portrait tablets and large phones, 600px and below) */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
 	.left-top-section {
 		grid-column: 2 / 36;
 	}
