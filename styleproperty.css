@@ -264,7 +264,7 @@ header {
 
 .left-middle-section {
 	grid-column: 2 / 24;
-	grid-row: 15 / 21;
+	grid-row: 15 / 22;
 	z-index: 1; 
 	background-color: #352392;
 	opacity: 1;
@@ -274,7 +274,7 @@ header {
 
 .left-middle-photo-section{
 	grid-column: 2 / 6;
-	grid-row: 15 / 21;
+	grid-row: 15 / 22;
 	z-index: 2; 
 	opacity: 1;
 	border-radius: 10px 0px 0px 10px;
@@ -287,7 +287,7 @@ header {
 
 .left-middle-description-section{
 	grid-column: 7 / 24;
-	grid-row: 15 / 21;
+	grid-row: 15 / 22;
 	z-index: 2; 
 	opacity: 1;
 	border-radius: 10px;
@@ -295,7 +295,7 @@ header {
 
 .left-bottom-section {
 	grid-column: 2 / 24;
-	grid-row: 22 / 28;
+	grid-row: 23 / 30;
 	z-index: 1; 
 	background-color: #352392;
 	opacity: 1;
@@ -305,7 +305,7 @@ header {
 
 .left-bottom-photo-section{
 	grid-column: 2 / 6;
-	grid-row: 22 / 28;
+	grid-row: 23 / 30;
 	z-index: 2; 
 	opacity: 1;
 	border-radius: 10px 0px 0px 10px;
@@ -318,7 +318,7 @@ header {
 
 .left-bottom-description-section{
 	grid-column: 7 / 24;
-	grid-row: 22 / 28;
+	grid-row: 23 / 30;
 	z-index: 2; 
 	opacity: 1;
 	border-radius: 10px;
