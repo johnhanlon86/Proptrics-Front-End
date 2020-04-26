@@ -236,6 +236,7 @@ header {
 	background-size: cover;
 	border-style: solid;
 	border-color: #ff8a00;
+	border-width: 2px 2px 2px 2px;
 }
 
 .left-top-photo-section{
@@ -250,7 +251,7 @@ header {
 	background-size: cover;
 	border-style: solid;
 	border-color: #ff8a00;
-	border-width: 3px 0px 3px 3px;
+	border-width: 2px 0px 2px 2px;
 }
 
 .left-top-description-section{
