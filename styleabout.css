@@ -216,7 +216,7 @@ header {
 }
 
 .heading {
-	grid-column: 12 / 24;
+	grid-column: 12 / 26;
 	grid-row: 6 / 7;
 	z-index: 1; 
 	margin-left: 5px;
@@ -229,7 +229,7 @@ header {
 }
 
 .about-section {
-	grid-column: 12 / 24;
+	grid-column: 12 / 26;
 	grid-row: 8 / 33;
 	z-index: 2; 
 	opacity: 1;
