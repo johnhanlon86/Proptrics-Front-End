@@ -44,7 +44,7 @@ Font: https://fonts.google.com/specimen/Text+Me+One
 	color: #ff8a00; /* Orange */
 	display: block;
 	white-space: nowrap;
-	transition: 0.3s;
+	transition: 0.5s;
 }
   
 /* When you mouse over the navigation links, change their color */
@@ -128,11 +128,17 @@ p {
 	grid-template-rows: repeat(36, 1fr);
 	/* grid-auto-rows: minmax(auto, auto); /* Originally minmax(100px, auto); */
 	height: 100vh;
-	width: 100vw;
 	box-sizing: border-box;
 	padding: 0px;
 	margin: 0px;
 	z-index: -1;
+}
+
+/* Make width 100% for narrower devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+	.grid-container {
+		width: 100vw;
+	}
 }
 
 nav {
@@ -376,33 +382,4 @@ footer p {
 	footer p {
 		font-size: 3vmin;
 	}
-}
-
-/* Move divs up for devices (portrait tablets and large phones, 600px and below) */
-
-	/*
-	.icon-container-quantity {
-		grid-row: 17 / 19;
-	}
-	
-	.icon-container-financial {
-		grid-row: 17 / 19;
-	}
-	
-	.icon-container-risk {
-		grid-row: 17 / 19;
-	}
-	
-	.metrics-quantity {
-		grid-row: 20 / 24;
-	}
-	
-	.metrics-financial {
-		grid-row: 20 / 24;
-	}
-	
-	.metrics-risk {
-		grid-row: 20 / 24;
-	}
-	*/
 }
