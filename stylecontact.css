@@ -1,0 +1,322 @@
+/*
+Proptrics.com
+Branding Colour Palette:
+Colour 1: #ff8a00 (Orange) - Primary Colour.
+Colour 2: #352392 (Navy Blue) - Secondary Colour.
+Colour 3: #f0ffff (Azure) - Background Colour.
+Colour 4: #a2aaad (Grey) - Border Colour.
+Colour 5: rgba(0,0,0,.2) - Search Box Shadow.
+Font: https://fonts.google.com/specimen/Text+Me+One
+*/
+
+* {
+	/* background-color: #F0FFFF; */
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+/* Make page fit to device with no scrolling with or without the top browser bar (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+	html {
+		position: fixed;
+	}
+}
+
+/* The side navigation menu */
+.sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	background-color: #352392; /* Navy Blue*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+  
+/* The navigation menu links */
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #ff8a00; /* Orange */
+	display: block;
+	white-space: nowrap;
+	transition: 0.3s;
+}
+  
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+	color: #f0ffff;
+ }
+  
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+  
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+.wrapper {
+	transition: 0.5s;
+}
+  
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 600px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+
+/* To be done in JS file?
+/* Make menu narrower for narrower devices (portrait tablets and large phones, 600px and below)
+@media only screen and (max-width: 600px) {
+	.sidenav {
+		width: 125px;
+	}
+}
+*/
+
+a {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 3vmin;
+	font-weight: 600;
+	color: #352392;
+	text-decoration: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+h1 {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 3vmin;
+	font-weight: 300;
+	color: #352392;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+h2 {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 3vmin;
+	font-weight: 600;
+	color: #f0ffff;
+	text-align: left;
+	padding-top: .5%;
+	padding-bottom: 5px;
+	margin: 0px;
+}
+
+p {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 2vmin;
+	font-weight: 300;
+	color: #f0ffff;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	line-height: normal;
+}
+
+/* Make font larger for smaller devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+	h2 {
+		font-size: 4vmin;
+		padding-top: 2%;
+	}
+	p {
+		font-size: 4vmin;
+	}
+}
+
+
+li {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 3vmin;
+	font-weight: 300;
+	color: #f0ffff;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+.grid-container {
+	display: grid; /* Create grid. */
+	background-color: #F0FFFF;
+	grid-template-columns: repeat(36, 1fr);
+	grid-template-rows: repeat(36, 1fr);
+	/* grid-auto-rows: minmax(auto, auto); /* Originally minmax(100px, auto); */
+	height: 100vh;
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	z-index: -1;
+}
+
+nav {
+	grid-column: 14 / 24;
+	grid-row: 3 / 5;
+	z-index: 0;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+header {
+	grid-column: 2 / 14;
+	grid-row: 2 / 5;
+	z-index: 1;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.headerLogoImage {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.menu {
+	grid-column: 24 / 36;
+	grid-row: 2 / 5;
+	z-index: 1;
+	margin-top: 5px;
+	margin-right: 10px;
+	text-align: right;
+}
+
+/* Rules for icon sizes: */
+.material-icons.md-36 {
+	font-size: 6vmin;
+	color: #ff8a00;
+}
+
+/* Make icons larger for devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+	.menu .material-icons.md-36 {
+		font-size: 10vmin;
+		color: #ff8a00;
+	}
+}
+
+.hero {
+	grid-column: 1 / 37;
+	grid-row: 5 / 35;
+	z-index: 0; 
+	background-color: #352392;
+	opacity: .8;
+	border-top-style: solid;
+	border-top-color: #ff8a00;
+}
+
+.heading {
+	grid-column: 12 / 26;
+	grid-row: 6 / 7;
+	z-index: 1; 
+	margin-left: 5px;
+}
+
+.heading h2 {
+	color: #ff8a00;
+	font-size: 4vh;
+	font-weight: 300;
+}
+
+.form-container {
+	grid-column: 12 / 26;
+	grid-row: 8 / 33;
+	border-radius: 5px;
+	padding: 5px;
+	z-index: 1;
+	font-family: 'Text Me One', sans-serif;
+	font-size: 3vmin;
+	font-weight: 300;
+	color: #ff8a00;
+}
+
+textarea, select, input {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 2vmin;
+	font-weight: 300;
+	color: #352392;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: none; /* Don't allow the user to resize the textarea */
+}
+  
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+	background-color: #ff8a00;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+  
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+	background-color: #352392;
+}
+
+footer {
+	grid-column: 1 / 37;
+	grid-row: 34 / 37;
+	z-index: 0;
+}
+
+footer {
+	grid-column: 2 / 36;
+	grid-row: 35 / 37;
+	z-index: 0;
+}
+
+footer p {
+	font-family: 'Text Me One', sans-serif;
+	font-size: 2vmin;
+	font-weight: 600;
+	color: #352392;
+	text-align: center;
+	vertical-align: auto;
+	padding-top: 15px;
+	padding-bottom: 0px;
+}
+
+/* Move button containers for devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 1000px) {
+	footer p {
+		font-size: 3vmin;
+		padding-bottom: 0px;
+	}
+}
+
+/* Revise layout for mobile (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 1000px) {
+	.heading {
+		grid-column: 2 / 36;
+	}
+
+	.form-container {
+		grid-column: 2 / 36;
+		font-size: 4vmin;
+	}
+
+	textarea, select, input {
+		font-size: 3vmin;
+	}
+}
